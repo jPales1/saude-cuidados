@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC - Saúde+Bem</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="container header">
+            <div class="logo">
+                <a href="index.html">Saúde+Bem</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                &#9776;
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="alimentacao.html">Alimentação</a></li>
+                <li><a href="exercicios.html">Exercícios</a></li>
+                <li><a href="saude-mental.html">Saúde Mental</a></li>
+                <li><a href="calculadora.html">Calculadora de IMC</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Conteúdo -->
+    <main class="container">
+        <h2 class="secondary-title">Calculadora de IMC</h2>
+        <form id="imc-form">
+            <div class="form-group">
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" name="peso" required>
+            </div>
+            <div class="form-group">
+                <label for="altura">Altura (m):</label>
+                <input type="number" step="0.01" id="altura" name="altura" required>
+            </div>
+            <button type="submit">Calcular IMC</button>
+        </form>
+        <div id="resultado" class="resultado"></div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Saúde+Bem. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/calculadora.js"></script>
+</body>
+</html>
